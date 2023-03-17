@@ -1,4 +1,4 @@
-public class Vehicle {
+public class Vehicle  {
     private String modelName;
     private int wheelsCount;
 
@@ -21,5 +21,23 @@ public class Vehicle {
 
     public void setWheelsCount(int wheelsCount) {
         this.wheelsCount = wheelsCount;
+    }
+
+    public void serviceName() {
+        System.out.println("Обслуживаем " + getModelName());
+    }
+
+    public void updateTyre(int wheelsCount) {
+        for (int i = 0; i < wheelsCount; i++) {
+            System.out.println("Меняем покрышку");
+        }
+    }
+
+    public void checkEngine() {
+        System.out.println("Проверяем двигатель");
+    }
+
+    public void checkTrailer() {
+        System.out.println("Проверяем прицеп");
     }
 }

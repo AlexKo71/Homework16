@@ -1,28 +1,24 @@
+
 public class ServiceStation {
 
     public void service(Bicycle bicycle) {
-        System.out.println("Обслуживаем " + bicycle.getModelName());
-        updateTyre(bicycle.getWheelsCount());
+        bicycle.serviceName();
+        bicycle.updateTyre(bicycle.getWheelsCount());
     }
 
     public void service(Car car) {
-        System.out.println("Обслуживаем " + car.getModelName());
-        updateTyre(car.getWheelsCount());
-        System.out.println("Проверяем двигатель");
+        car.serviceName();
+        car.updateTyre(car.getWheelsCount());
+        car.checkEngine();
     }
 
     public void service(Truck truck) {
-        System.out.println("Обслуживаем " + truck.getModelName());
-        updateTyre(truck.getWheelsCount());
-        System.out.println("Проверяем двигатель");
-        System.out.println("Проверяем прицеп");
+        truck.serviceName();
+        truck.updateTyre(truck.getWheelsCount());
+        truck.checkEngine();
+        truck.checkTrailer();
     }
 
-    public void updateTyre(int wheelsCount) {
-        for (int i = 0; i < wheelsCount; i++) {
-            System.out.println("Меняем покрышку");
-        }
-    }
 
 }
 
