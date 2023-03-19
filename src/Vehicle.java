@@ -1,6 +1,6 @@
-public class Vehicle  {
-    private String modelName;
-    private int wheelsCount;
+public abstract class Vehicle  {
+    private final String modelName;
+    private final int wheelsCount;
 
     public Vehicle(String modelName, int wheelsCount) {
         this.modelName = modelName;
@@ -23,5 +23,5 @@ public class Vehicle  {
             System.out.println("Меняем покрышку");
         }
     }
-
+    abstract public void service();
 }
