@@ -1,8 +1,7 @@
-public class Truck extends Service {
+public class Truck extends ServiceTruck {
     public Truck(String modelName, int wheelsCount) {
         super(modelName, wheelsCount);
     }
-
 
     @Override
     public void service () {
@@ -10,6 +9,7 @@ public class Truck extends Service {
         super.updateTyre(getWheelsCount());
         super.checkEngine();
         super.checkTrailer();
+
     }
 
 }

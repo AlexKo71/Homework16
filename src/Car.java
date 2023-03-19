@@ -1,4 +1,4 @@
-public class Car extends Service {
+public class Car extends ServiceCar {
 
     public Car(String modelName, int wheelsCount) {
         super(modelName, wheelsCount);

@@ -5,9 +5,8 @@ public class Bicycle extends Service {
         super(modelName, wheelsCount);
     }
 
-
     @Override
-    public void service () {
+    public void service() {
         super.serviceName(getModelName());
         super.updateTyre(getWheelsCount());
     }
